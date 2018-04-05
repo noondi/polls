@@ -38,7 +38,7 @@ module.exports = {
                 if(!questionFound){
                     Question.create({
                         user: req.session.user, // creation of user here along with question!!!
-                        person: req.session.user.name, // creation of person not making sense!!!
+                        person: req.session.user.name, // creation of person 
                         question:req.body.question, 
                         option1: req.body.option1, 
                         option2: req.body.option2, 
